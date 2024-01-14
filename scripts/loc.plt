@@ -7,7 +7,7 @@ set ylabel "Speedup"
 set grid
 set style arrow 1 nohead
 plot "result_openmp.dat" u (column(0)):3:xtic(1) smooth csplines w l linestyle 1 linewidth 3 title "Row-wise OpenMP", \
-	"" u (column(0)):3:xtic(1) with points linestyle 1 linewidth 3 title "", \
+	"" u (column(0)):3:xtic(1) with points linestyle 1 linewidth 3 title "",
 	/*"" u (column(0)):5:xtic(1) smooth csplines w l linestyle 2 linewidth 3 title "Column-wise OpenMP", \
 	"" u (column(0)):5:xtic(1) with points linestyle 2 linewidth 3 title "", \
 	"" u (column(0)):7:xtic(1) smooth csplines w l linestyle 3 linewidth 3 title "Checkerboard OpenMP", \
@@ -20,7 +20,7 @@ set ylabel "Execution Time"
 set grid
 set style arrow 1 nohead
 plot "result_openmp.dat" u (column(0)):2:xtic(1) smooth csplines w l linestyle 1 linewidth 3 title "Row-wise OpenMP", \
-	"" u (column(0)):2:xtic(1) with points linestyle 1 linewidth 3 title "", \
+	"" u (column(0)):2:xtic(1) with points linestyle 1 linewidth 3 title "",
 	/*"" u (column(0)):4:xtic(1) smooth csplines w l linestyle 2 linewidth 3 title "Column-wise OpenMP", \
 	"" u (column(0)):4:xtic(1) with points linestyle 2 linewidth 3 title "", \
 	"" u (column(0)):6:xtic(1) smooth csplines w l linestyle 3 linewidth 3 title "Checkerboard OpenMP", \
@@ -33,7 +33,7 @@ plot "result_openmp.dat" u (column(0)):2:xtic(1) smooth csplines w l linestyle 1
 	set grid
 	set style arrow 1 nohead
 	plot "result_mpi.dat" u (column(0)):3:xtic(1) smooth csplines w l linestyle 1 linewidth 3 title "Row-wise MPI", \
-		"" u (column(0)):3:xtic(1) with points linestyle 1 linewidth 3 title "", \
+		"" u (column(0)):3:xtic(1) with points linestyle 1 linewidth 3 title "",
 		/*"" u (column(0)):5:xtic(1) smooth csplines w l linestyle 2 linewidth 3 title "Column-wise MPI", \
 		"" u (column(0)):5:xtic(1) with points linestyle 2 linewidth 3 title "", \
 		"" u (column(0)):7:xtic(1) smooth csplines w l linestyle 3 linewidth 3 title "Checkerboard MPI", \
@@ -46,7 +46,7 @@ plot "result_openmp.dat" u (column(0)):2:xtic(1) smooth csplines w l linestyle 1
 	set grid
 	set style arrow 1 nohead
 	plot "result_mpi.dat" u (column(0)):2:xtic(1) smooth csplines w l linestyle 1 linewidth 3 title "Row-wise MPI", \
-		"" u (column(0)):2:xtic(1) with points linestyle 1 linewidth 3 title "", \
+		"" u (column(0)):2:xtic(1) with points linestyle 1 linewidth 3 title "",
 		/*"" u (column(0)):4:xtic(1) smooth csplines w l linestyle 2 linewidth 3 title "Column-wise MPI", \
 		"" u (column(0)):4:xtic(1) with points linestyle 2 linewidth 3 title "", \
 		"" u (column(0)):6:xtic(1) smooth csplines w l linestyle 3 linewidth 3 title "Checkerboard MPI", \
