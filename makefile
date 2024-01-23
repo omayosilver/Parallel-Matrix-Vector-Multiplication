@@ -13,4 +13,4 @@ rowStripe_openmp: src/rowStripe_openmp.cpp
 mvm_rs_mpi: src/mvm_rs_mpi.cpp
 	$(MPICXX) src/mvm_rs_mpi.cpp -o mvm_rs_mpi
 clean:
-	rm serial rowStripe_openmp columnStripe_openmp checkerboard_openmp mvm_rs_mpi mvm_cs_mpi mvm_checkerboard
+	rm serial rowStripe_openmp
